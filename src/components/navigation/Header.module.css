@@ -1,0 +1,6 @@
+.socialIcon {
+  &:hover {
+    background-color: transparent;
+  }
+}
+

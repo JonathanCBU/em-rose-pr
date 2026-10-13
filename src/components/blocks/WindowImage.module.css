@@ -1,0 +1,45 @@
+/* The "window": the wrapper clips a viewport-fixed image, so the image stays
+   still while the page scrolls past and reveals different parts of it.
+   Unlike background-attachment: fixed, this also works on iOS Safari. */
+.window {
+  display: flex;
+  flex-direction: column;
+  clip-path: inset(0);
+  background: var(--mantine-color-gray-2, #e9ecef);
+}
+
+.image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text layer: in normal flow, so it scrolls with the window while the image
+   stays fixed behind it. The scrim keeps text readable on busy photos.
+   Mantine text picks its own color, so pass c="white" on Title/Text. */
+.content {
+  position: relative; /* paints above the fixed image */
+  flex: 1; /* fills the window */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.caption {
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+  z-index: 1;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.8rem;
+}

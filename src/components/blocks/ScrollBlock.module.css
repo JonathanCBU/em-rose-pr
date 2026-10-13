@@ -1,0 +1,6 @@
+.block {
+  position: relative;
+  width: 100%;
+  /* Keeps anchor jumps from landing under a sticky header, if you have one. */
+  scroll-margin-top: var(--header-height, 0px);
+}
