@@ -1,4 +1,4 @@
-import type { EducationContent } from "@/components/EducationSection";
+import type { EducationContent } from "@/components/sections/";
 
 export const Education = {
   schools: [
