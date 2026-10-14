@@ -7,6 +7,7 @@ import { JobCard } from "@/components/cards";
 import { Jobs } from "@/content";
 import { EducationSection } from "@/components/sections";
 import { Education } from "@/content/education";
+import { Fake } from "not real";
 
 const HeaderContent: HeaderProps = {
   title: "Emily Rosenberg",
