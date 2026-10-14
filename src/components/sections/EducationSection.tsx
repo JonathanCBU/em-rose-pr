@@ -18,16 +18,11 @@ export interface Certification {
   url?: string;
 }
 
-export interface Award {
-  name: string;
-  url?: string;
-}
-
 export interface EducationContent {
   schools: School[];
   skills: SkillGroup[];
   certifications: Certification[];
-  awards: Award[];
+  awards: Certification[];
 }
 
 /** An external link that opens in a new tab. Renders plain text when there's no url. */
@@ -83,9 +78,9 @@ export function EducationSection({
 
       <Stack gap="xs">
         <Title order={3}>Awards</Title>
-        {awards.map(({ name, url }) => (
+        {awards.map(({ name, issued, url }) => (
           <Text key={name}>
-            <ExternalLink url={url}>{name}</ExternalLink>
+            <ExternalLink url={url}>{name}</ExternalLink> - {issued} Recipient
           </Text>
         ))}
       </Stack>

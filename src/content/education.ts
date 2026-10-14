@@ -72,8 +72,9 @@ export const Education = {
 
   awards: [
     {
-      name: "College of Communication Blue Chip Award - 2020 Recipient",
+      name: "College of Communication Blue Chip Award",
       url: "http://www.bu.edu/com/resources/current-students/undergraduate/blue-chip-award-winners/",
+      issued: "2020",
     },
   ],
 } satisfies EducationContent;

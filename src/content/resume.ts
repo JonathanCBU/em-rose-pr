@@ -34,7 +34,7 @@ export const Jobs: JobCardProps[] = [
     title: "Senior PR Intern",
     company: "BigFish Communications",
     summary:
-      "As a Senior PR intern at BIGfish, I was responsible for a variety of PR tasks that included compiling media lists, drafting and sending pitches, conducting outreach on behalf of clients to secure coverage, writing media backgrounder documents, tracking press coverage and clipping press hits. Additionally, my internal responsibilities included creating and executing BIGfish social content across multiple platforms including Facebook, Linkedin, Instagram and Twitter. In addition, I was responsible for writing and editing blog posts, drafting copy for website articles, contributing to client pitch materials and training new interns.",
+      "As a Senior PR intern at BIGfish, I was responsible for a variety of PR tasks that included compiling media lists, drafting and sending pitches, conducting outreach on behalf of clients to secure coverage, writing media backgrounder documents, tracking press coverage and clipping press hits. Additionally, my internal responsibilities included creating and executing BIGfish social content across multiple platforms including Facebook, LinkedIn, Instagram and Twitter. In addition, I was responsible for writing and editing blog posts, drafting copy for website articles, contributing to client pitch materials and training new interns.",
     bullets: [],
     timeline: "May 2019 - Mar 2020",
   },

@@ -1,3 +1,4 @@
+import classes from "./Header.module.css";
 import {
   Anchor,
   Box,
@@ -11,7 +12,7 @@ import {
   IconBrandLinkedin,
   IconBrandX,
 } from "@tabler/icons-react";
-import classes from "./Header.module.css";
+import { capitalize } from "@/utils/strings";
 
 export interface HeaderProps {
   title: string;
@@ -51,12 +52,12 @@ export function Header({
               <Anchor
                 key={s}
                 href={`#${s}`}
-                size="sm"
+                size="m"
                 fw={spy.active === i ? 700 : 400}
                 c={spy.active === i ? "blue" : "dimmed"}
                 underline={spy.active === i ? "always" : "hover"}
               >
-                {s}
+                {capitalize(s)}
               </Anchor>
             ))}
           </Group>
@@ -68,6 +69,7 @@ export function Header({
                 href={linkedin}
                 variant="subtle"
                 aria-label="Settings"
+                size="input-lg"
                 className={classes.socialIcon}
               >
                 <IconBrandLinkedin style={{ width: "70%", height: "70%" }} />
@@ -80,6 +82,7 @@ export function Header({
                 href={insta}
                 variant="subtle"
                 aria-label="Settings"
+                size="input-lg"
                 className={classes.socialIcon}
               >
                 <IconBrandInstagram style={{ width: "70%", height: "70%" }} />
@@ -92,6 +95,7 @@ export function Header({
                 href={twitter}
                 variant="subtle"
                 aria-label="Settings"
+                size="input-lg"
                 className={classes.socialIcon}
               >
                 <IconBrandX style={{ width: "70%", height: "70%" }} />
