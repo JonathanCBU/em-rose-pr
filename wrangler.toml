@@ -1,0 +1,5 @@
+[vars]
+ENVIRONMENT = "production"
+
+[previews.vars]
+ENVIRONMENT = "preview"
