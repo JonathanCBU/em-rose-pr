@@ -7,9 +7,9 @@ import { JobCard } from "@/components/cards";
 import { Jobs } from "@/content";
 import { EducationSection } from "@/components/sections";
 import { Education } from "@/content/education";
-import field from "./assets/images/field.jpg";
-import flowers from "./assets/images/flowers.jpg";
-import skyline from "./assets/images/brooklyn_skyline.jpg";
+import field from "@/assets/images/field.jpg";
+import flowers from "@/assets/images/flowers.jpg";
+import skyline from "@/assets/images/brooklyn_skyline.jpg";
 
 const HeaderContent: HeaderProps = {
   title: "Emily Rosenberg",
