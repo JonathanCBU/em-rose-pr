@@ -7,6 +7,9 @@ import { JobCard } from "@/components/cards";
 import { Jobs } from "@/content";
 import { EducationSection } from "@/components/sections";
 import { Education } from "@/content/education";
+import field from "./assets/images/field.jpg";
+import flowers from "./assets/images/flowers.jpg";
+import skyline from "./assets/images/brooklyn_skyline.jpg";
 
 const HeaderContent: HeaderProps = {
   title: "Emily Rosenberg",
@@ -27,11 +30,7 @@ export function App() {
   return (
     <main>
       <Header {...HeaderContent} />
-      <WindowImage
-        id={"home"}
-        src="https://picsum.photos/id/1018/2000/1200"
-        alt="home"
-      >
+      <WindowImage id={"home"} src={field} alt="home">
         <Container size="lg" w="100%">
           <Title order={2} c="white">
             Hey there, I'm Emily Rosenberg
@@ -58,12 +57,7 @@ export function App() {
         </Container>
       </ScrollBlock>
 
-      <WindowImage
-        src="https://picsum.photos/id/1039/2000/1200"
-        alt="A waterfall in a forest"
-        caption="Another window"
-        height="90vh"
-      />
+      <WindowImage src={flowers} alt="spacer_1" height="90vh" />
 
       <ScrollBlock id="experience">
         <Container size="lg" py={80}>
@@ -76,11 +70,7 @@ export function App() {
         </Container>
       </ScrollBlock>
 
-      <WindowImage
-        id="education"
-        src="https://picsum.photos/id/1018/2000/1200"
-        alt="home"
-      >
+      <WindowImage id="education" src={skyline} alt="education">
         <Container size="lg" w="100%">
           <Title order={2} c="white">
             Education
