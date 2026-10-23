@@ -12,5 +12,5 @@ ENVIRONMENT = "production"
 ENVIRONMENT = "preview"
 
 [[routes]]
-pattern = ".emilyerosenberg.com"
+pattern = "emilyerosenberg.com"
 custom_domain = true
