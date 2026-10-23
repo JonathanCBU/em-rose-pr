@@ -10,3 +10,7 @@ ENVIRONMENT = "production"
 
 [previews.vars]
 ENVIRONMENT = "preview"
+
+[[routes]]
+pattern = ".emilyerosenberg.com"
+custom_domain = true
