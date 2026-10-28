@@ -54,12 +54,4 @@ export const Jobs: JobCardProps[] = [
     bullets: [],
     timeline: "Jan 2018 - Dec 2018",
   },
-  {
-    title: "Social Media Marketing Intern",
-    company: "Nadeem Mazen for Congress",
-    summary:
-      "As a Councillor Mazen’s social media marketing intern for his 2019 Congressional campaign, I created a social media marketing strategy from scratch. Developed a weekly posting schedule, identified key stakeholder audiences and drafted an overall digital campaign strategy. Also developed a social media strategy for Outvote.io, a grassroots campaigning website.",
-    bullets: [],
-    timeline: "Sep 2017 - Dec 2017",
-  },
 ];
